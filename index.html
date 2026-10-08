@@ -1,0 +1,590 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dra. Marilda Lipp | IPCS – Instituto de Psicologia e Controle do Stress</title>
+<meta name="description" content="Dra. Marilda Novaes Lipp: psicóloga, pesquisadora e palestrante, criadora do Treino de Controle do Stress (TCS). Psicoterapia on-line e presencial em Campinas-SP e programas para empresas.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Dra. Marilda Lipp | IPCS">
+<meta property="og:description" content="Mais de 40 anos dedicados ao estudo e ao controle do stress. Psicoterapia, palestras e programas para empresas.">
+<meta property="og:image" content="https://ipcslipp.com.br/imagens/marilda-livros.jpg">
+<meta property="og:url" content="https://ipcslipp.com.br/">
+<link rel="icon" type="image/png" href="imagens/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --deep:#0c2629; --deep-2:#123539; --teal:#4f9195; --teal-2:#3f7d81; --aqua:#7cc3b9;
+    --mint:#e9f3f1; --cream:#f7f5f0; --ink:#152225; --muted:#56666a; --line:#dfe7e5;
+    --gold:#c8a46a; --white:#fff; --max:1180px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:"Figtree",system-ui,sans-serif;color:var(--ink);background:var(--white);line-height:1.7;font-size:17px;-webkit-font-smoothing:antialiased}
+  img{max-width:100%;display:block}
+  a{color:inherit}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 28px}
+  h1,h2,h3{font-family:"Fraunces",Georgia,serif;font-weight:400;line-height:1.1;letter-spacing:-.01em}
+  h2{font-size:clamp(2.2rem,4.4vw,3.4rem)}
+  h2 em,h1 em{font-style:italic;font-weight:300;color:var(--teal)}
+  section{padding:120px 0}
+  p+p{margin-top:18px}
+  .kicker{display:inline-flex;align-items:center;gap:12px;font-size:13px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--teal);margin-bottom:22px}
+  .kicker::before{content:"";width:34px;height:1px;background:currentColor}
+
+  /* Buttons */
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:16px 28px;border-radius:999px;font-weight:600;font-size:15px;text-decoration:none;letter-spacing:.01em;transition:transform .25s,background .25s,box-shadow .25s,color .25s}
+  .btn svg{width:19px;height:19px;fill:currentColor}
+  .btn-primary{background:var(--aqua);color:var(--deep)}
+  .btn-primary:hover{background:#94d3c9;transform:translateY(-2px);box-shadow:0 12px 30px rgba(124,195,185,.3)}
+  .btn-ghost{color:#fff;box-shadow:inset 0 0 0 1px rgba(255,255,255,.35)}
+  .btn-ghost:hover{box-shadow:inset 0 0 0 1px #fff;transform:translateY(-2px)}
+  .btn-dark{background:var(--deep);color:#fff}
+  .btn-dark:hover{background:var(--teal-2);transform:translateY(-2px)}
+
+  /* Header */
+  header{position:fixed;inset:0 0 auto;z-index:50;transition:background .3s,box-shadow .3s}
+  header.solid{background:rgba(12,38,41,.94);backdrop-filter:blur(10px);box-shadow:0 1px 0 rgba(255,255,255,.06)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:84px;gap:24px}
+  .nav .logo img{height:40px;width:auto}
+  .menu{display:flex;gap:34px;list-style:none}
+  .menu a{color:rgba(255,255,255,.78);text-decoration:none;font-size:14.5px;font-weight:500;transition:color .2s}
+  .menu a:hover{color:#fff}
+  .nav .btn{padding:12px 22px;font-size:14px}
+
+  /* Hero */
+  .hero{position:relative;background:radial-gradient(120% 90% at 85% 10%,#1d4f53 0%,var(--deep-2) 40%,var(--deep) 100%);color:#fff;padding:150px 0 0;overflow:hidden}
+  .hero::before{content:"";position:absolute;inset:0;background:
+     linear-gradient(115deg,transparent 0 62%,rgba(124,195,185,.06) 62% 63%,transparent 63%),
+     linear-gradient(70deg,transparent 0 30%,rgba(255,255,255,.03) 30% 30.4%,transparent 30.4%);pointer-events:none}
+  .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:end;position:relative}
+  .hero-copy{padding-bottom:110px}
+  .hero .kicker{color:var(--aqua)}
+  .hero h1{font-size:clamp(3.2rem,7.2vw,6.2rem);font-weight:300;margin-bottom:28px}
+  .hero h1 em{color:var(--aqua)}
+  .hero .sub{font-size:clamp(1.1rem,1.6vw,1.3rem);color:rgba(255,255,255,.78);max-width:540px;margin-bottom:40px;line-height:1.6}
+  .hero .ctas{display:flex;gap:14px;flex-wrap:wrap}
+  .portrait{position:relative;align-self:end}
+  .portrait .shape{position:relative;border-radius:280px 280px 0 0;overflow:hidden;aspect-ratio:3/4;background:#1b4246;box-shadow:0 40px 80px rgba(0,0,0,.35)}
+  .portrait img{width:100%;height:100%;object-fit:cover;object-position:center 20%}
+  .portrait::before{content:"";position:absolute;inset:-18px -18px 0 18px;border:1px solid rgba(124,195,185,.4);border-radius:290px 290px 0 0;border-bottom:0}
+  .badge{position:absolute;left:-46px;bottom:70px;background:#fff;color:var(--ink);border-radius:18px;padding:18px 22px;box-shadow:0 20px 50px rgba(0,0,0,.25);display:flex;align-items:center;gap:14px;max-width:250px}
+  .badge strong{font-family:"Fraunces",serif;font-weight:400;font-size:2.4rem;line-height:1;color:var(--teal)}
+  .badge span{font-size:13px;line-height:1.35;color:var(--muted)}
+
+  .stats{position:relative;background:rgba(255,255,255,.04);border-top:1px solid rgba(255,255,255,.08)}
+  .stats .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+  .stat{padding:34px 24px;border-right:1px solid rgba(255,255,255,.08)}
+  .stat:last-child{border-right:0}
+  .stat strong{display:block;font-family:"Fraunces",serif;font-weight:300;font-size:clamp(2rem,3.4vw,2.9rem);color:#fff;line-height:1}
+  .stat span{display:block;margin-top:8px;font-size:14px;color:rgba(255,255,255,.6)}
+
+  /* Destaques (3 links) */
+  .highlights{padding:0;background:var(--cream)}
+  .hl-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;transform:translateY(-1px);padding:56px 0}
+  .hl{position:relative;display:flex;flex-direction:column;gap:6px;padding:30px 30px 28px;background:#fff;border-radius:20px;text-decoration:none;border:1px solid var(--line);transition:transform .3s,box-shadow .3s,border-color .3s;overflow:hidden}
+  .hl::after{content:"";position:absolute;left:0;top:0;height:4px;width:0;background:var(--teal);transition:width .4s}
+  .hl:hover{transform:translateY(-6px);box-shadow:0 24px 50px rgba(12,38,41,.12);border-color:transparent}
+  .hl:hover::after{width:100%}
+  .hl small{font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--teal)}
+  .hl h3{font-size:1.65rem;color:var(--ink)}
+  .hl p{font-size:15px;color:var(--muted)}
+  .hl .arrow{position:absolute;right:26px;top:28px;width:42px;height:42px;border-radius:50%;background:var(--mint);display:grid;place-items:center;transition:background .3s,transform .3s}
+  .hl .arrow svg{width:16px;stroke:var(--deep);fill:none;stroke-width:2}
+  .hl:hover .arrow{background:var(--teal);transform:rotate(-45deg)}
+  .hl:hover .arrow svg{stroke:#fff}
+
+  /* Sobre */
+  .about{background:var(--cream);padding-top:80px}
+  .about-head{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:end;margin-bottom:56px}
+  .about-head p{color:var(--muted);font-size:1.08rem}
+  .about-img{border-radius:28px;overflow:hidden;aspect-ratio:21/10;margin-bottom:72px}
+  .about-img img{width:100%;height:100%;object-fit:cover;object-position:center 35%}
+  .cols{display:grid;grid-template-columns:repeat(3,1fr);gap:48px}
+  .cols h3{font-size:1.35rem;color:var(--teal-2);margin-bottom:12px}
+  .cols p{font-size:16px;color:var(--muted)}
+  .cols .n{font-family:"Fraunces",serif;font-size:14px;color:var(--gold);letter-spacing:.1em;display:block;margin-bottom:10px}
+
+  /* Pesquisadora */
+  .research{background:var(--deep);color:#fff;position:relative;overflow:hidden}
+  .research::after{content:"Ψ";position:absolute;right:-40px;bottom:-180px;font-family:"Fraunces",serif;font-size:620px;line-height:1;color:rgba(124,195,185,.05);pointer-events:none}
+  .research-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;position:relative;z-index:1}
+  .research .kicker{color:var(--aqua)}
+  .research h2 em{color:var(--aqua)}
+  .research p{color:rgba(255,255,255,.75)}
+  blockquote{font-family:"Fraunces",serif;font-weight:300;font-style:italic;font-size:clamp(1.5rem,2.4vw,2rem);line-height:1.35;color:#fff;border-left:2px solid var(--gold);padding-left:28px;margin:32px 0 0}
+  .tcs-list{list-style:none;display:grid;gap:14px;margin-top:8px}
+  .tcs-list li{display:flex;gap:18px;align-items:flex-start;padding:22px 24px;border-radius:16px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08)}
+  .tcs-list b{font-family:"Fraunces",serif;font-weight:400;font-size:1.6rem;color:var(--aqua);line-height:1;min-width:36px}
+  .tcs-list span{color:rgba(255,255,255,.85);font-size:16px}
+
+  /* Palestrante */
+  .speaker-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:88px;align-items:center}
+  .speaker-img{position:relative}
+  .speaker-img .ph{border-radius:28px;overflow:hidden;aspect-ratio:4/5}
+  .speaker-img img{width:100%;height:100%;object-fit:cover;object-position:20% 30%}
+  .speaker-img::before{content:"";position:absolute;inset:28px -28px -28px 28px;border-radius:28px;background:var(--mint);z-index:-1}
+  .speaker-img .tag{position:absolute;right:-24px;top:40px;background:var(--deep);color:#fff;padding:14px 20px;border-radius:14px;font-size:14px;font-weight:500;box-shadow:0 14px 34px rgba(0,0,0,.2)}
+  .speaker p{color:var(--muted)}
+  .speaker h2{margin-bottom:28px}
+  .topics{display:flex;flex-wrap:wrap;gap:10px;margin-top:32px}
+  .topics span{padding:9px 16px;border-radius:999px;background:var(--mint);color:var(--teal-2);font-size:14px;font-weight:500}
+
+  /* Psicoterapia */
+  .therapy{background:var(--mint)}
+  .therapy-card{display:grid;grid-template-columns:1.3fr .7fr;background:#fff;border-radius:32px;overflow:hidden;box-shadow:0 30px 70px rgba(12,38,41,.08)}
+  .therapy-copy{padding:64px}
+  .therapy-copy h2{margin-bottom:24px}
+  .therapy-copy p{color:var(--muted)}
+  .modes{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:32px 0 36px}
+  .modes div{padding:18px 20px;border-radius:14px;background:var(--cream)}
+  .modes strong{display:block;font-size:15px}
+  .modes span{font-size:14px;color:var(--muted)}
+  .therapy-img{position:relative;min-height:420px}
+  .therapy-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+
+  /* Empresas */
+  .biz-head{display:grid;grid-template-columns:1.1fr .9fr;gap:64px;align-items:end;margin-bottom:64px}
+  .biz-head p{color:var(--muted)}
+  .services{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .svc{padding:40px 34px;border-radius:24px;border:1px solid var(--line);background:#fff;transition:transform .3s,box-shadow .3s}
+  .svc:hover{transform:translateY(-6px);box-shadow:0 24px 50px rgba(12,38,41,.08)}
+  .svc .ic{width:58px;height:58px;border-radius:16px;background:var(--mint);display:grid;place-items:center;margin-bottom:26px}
+  .svc .ic svg{width:28px;height:28px;stroke:var(--teal-2);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+  .svc h3{font-size:1.5rem;margin-bottom:14px}
+  .svc p,.svc li{font-size:15.5px;color:var(--muted)}
+  .svc ul{list-style:none;display:grid;gap:10px}
+  .svc li{padding-left:22px;position:relative}
+  .svc li::before{content:"";position:absolute;left:0;top:11px;width:10px;height:2px;background:var(--teal)}
+  .svc.featured{background:var(--deep);border-color:var(--deep)}
+  .svc.featured h3{color:#fff}
+  .svc.featured p{color:rgba(255,255,255,.75)}
+  .svc.featured .ic{background:rgba(124,195,185,.15)}
+  .svc.featured .ic svg{stroke:var(--aqua)}
+
+  /* Cases */
+  .cases{background:var(--cream)}
+  .cases h2{margin-bottom:56px}
+  .case-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:24px}
+  .case{background:#fff;border-radius:24px;padding:40px;border:1px solid var(--line)}
+  .case.wide{grid-column:span 12;display:grid;grid-template-columns:1.3fr 1fr;gap:56px;align-items:center}
+  .case.half{grid-column:span 6}
+  .case,.case>*{min-width:0}
+  .case small{font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--teal)}
+  .case h3{font-size:1.6rem;margin:8px 0 6px}
+  .case .who{font-size:14.5px;color:var(--muted);margin-bottom:24px}
+  .big-num{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .big-num div{padding:22px 18px;border-radius:16px;background:var(--mint);text-align:center}
+  .big-num strong{display:block;font-family:"Fraunces",serif;font-weight:400;font-size:2.4rem;line-height:1;color:var(--teal-2)}
+  .big-num span{display:block;margin-top:8px;font-size:13px;color:var(--muted);line-height:1.3}
+  .scroll{overflow-x:auto}
+  table{width:100%;border-collapse:collapse;font-size:15px}
+  th{font-size:11.5px;text-transform:uppercase;letter-spacing:.08em;text-align:left;color:var(--muted);font-weight:600;padding:10px;border-bottom:1px solid var(--ink)}
+  td{padding:12px 10px;border-bottom:1px solid var(--line);font-variant-numeric:tabular-nums}
+  tr.total td{font-weight:700;border-bottom:0;color:var(--teal-2)}
+  .drop{display:flex;align-items:flex-end;gap:18px;height:200px;margin:12px 0 8px}
+  .drop div{flex:1;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;height:100%}
+  .drop i{display:block;width:100%;border-radius:10px 10px 0 0;background:linear-gradient(180deg,var(--teal),var(--teal-2))}
+  .drop div:last-child i{background:linear-gradient(180deg,var(--aqua),var(--teal))}
+  .drop b{font-family:"Fraunces",serif;font-weight:400;font-size:1.5rem;margin-bottom:6px}
+  .drop-labels{display:flex;gap:18px}
+  .drop-labels span{flex:1;text-align:center;font-size:13px;color:var(--muted)}
+  .callout{margin-top:22px;padding:16px 18px;border-radius:14px;background:var(--deep);color:#fff;font-size:15px}
+  .callout strong{color:var(--aqua);font-family:"Fraunces",serif;font-weight:400;font-size:1.5rem;margin-right:6px}
+  .chart{display:flex;align-items:flex-end;gap:12px;height:200px;border-bottom:1px solid var(--line);margin-top:30px}
+  .grp{flex:1;display:flex;align-items:flex-end;justify-content:center;gap:4px;height:100%}
+  .bar{width:44%;border-radius:6px 6px 0 0;position:relative}
+  .bar.pre{background:#b9cfcf}
+  .bar.pos{background:var(--teal)}
+  .bar em{position:absolute;top:-21px;left:50%;transform:translateX(-50%);font-style:normal;font-size:12px;color:var(--muted);font-weight:600}
+  .labels{display:flex;gap:12px;margin-top:10px}
+  .labels span{flex:1;text-align:center;font-size:12px;color:var(--muted);line-height:1.3}
+  .legend{display:flex;gap:20px;font-size:13px;color:var(--muted);margin-top:16px}
+  .legend i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:7px;vertical-align:-1px}
+
+  /* Contato */
+  .contact{background:var(--deep);color:#fff;position:relative;overflow:hidden}
+  .contact-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:80px;align-items:center}
+  .contact h2{font-size:clamp(2.6rem,5.4vw,4.4rem);font-weight:300}
+  .contact h2 em{color:var(--aqua)}
+  .contact .lead{color:rgba(255,255,255,.72);margin:24px 0 40px;max-width:480px}
+  .contact .ctas{display:flex;gap:14px;flex-wrap:wrap}
+  .clist{display:grid;gap:12px}
+  .clist a{display:flex;align-items:center;gap:18px;padding:20px 24px;border-radius:18px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);text-decoration:none;transition:background .25s,border-color .25s}
+  .clist a:hover{background:rgba(124,195,185,.12);border-color:rgba(124,195,185,.4)}
+  .clist .ci{width:44px;height:44px;border-radius:12px;background:rgba(124,195,185,.15);display:grid;place-items:center;flex:none}
+  .clist .ci svg{width:20px;height:20px;stroke:var(--aqua);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+  .clist .ci svg.fill{fill:var(--aqua);stroke:none}
+  .clist small{display:block;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.5)}
+  .clist span{font-size:16.5px}
+
+  footer{background:#081c1e;color:rgba(255,255,255,.55);padding:40px 0;font-size:14px}
+  footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+  footer img{height:32px;width:auto;opacity:.9}
+
+  .float-wa{position:fixed;right:22px;bottom:22px;width:60px;height:60px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 10px 26px rgba(0,0,0,.25);z-index:60;transition:transform .25s}
+  .float-wa:hover{transform:scale(1.08)}
+  .float-wa svg{width:30px;fill:#fff}
+
+  /* Reveal */
+  .reveal{opacity:0;transform:translateY(28px);transition:opacity .9s ease,transform .9s ease}
+  .reveal.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+  @media (max-width:980px){
+    section{padding:88px 0}
+    .menu{display:none}
+    .hero{padding-top:120px}
+    .hero-grid,.about-head,.research-grid,.speaker-grid,.biz-head,.contact-grid,.case.wide{grid-template-columns:1fr;gap:44px}
+    .hero-copy{padding-bottom:0}
+    .portrait{max-width:420px;margin:0 auto;width:100%}
+    .badge{left:-12px}
+    .stats .wrap{grid-template-columns:repeat(2,1fr)}
+    .stat:nth-child(2){border-right:0}
+    .stat:nth-child(-n+2){border-bottom:1px solid rgba(255,255,255,.08)}
+    .hl-grid,.cols,.services{grid-template-columns:1fr}
+    .about-img{aspect-ratio:3/2}
+    .speaker-img{max-width:460px;margin:0 auto 20px;width:100%}
+    .therapy-card{grid-template-columns:1fr}
+    .therapy-img{min-height:340px;order:-1}
+    .therapy-copy{padding:44px 32px}
+    .case.half{grid-column:span 12}
+  }
+  @media (max-width:560px){
+    body{font-size:16px}
+    .wrap{padding:0 18px}
+    .nav{height:72px}
+    .nav .logo img{height:32px}
+    .nav .btn{padding:10px 16px;font-size:13px}
+    .nav .btn .t{display:none}
+    .hero .ctas .btn{width:100%}
+    .badge{left:8px;bottom:24px;padding:14px 16px}
+    .badge strong{font-size:2rem}
+    .stat{padding:26px 16px}
+    .speaker-img::before{inset:18px -10px -18px 18px}
+    .speaker-img .tag{right:8px}
+    .modes{grid-template-columns:1fr}
+    .case{padding:26px 20px}
+    .big-num{grid-template-columns:1fr}
+    th,td{padding:10px 6px;font-size:13.5px}
+    th{font-size:10.5px}
+    .chart,.labels{gap:6px}
+    .labels span{font-size:10.5px}
+    .contact .ctas .btn{width:100%}
+  }
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-wa" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 4.54 0 8.24 3.7 8.24 8.24 0 4.55-3.7 8.24-8.23 8.24zm4.52-6.16c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28z"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+</svg>
+
+<header id="top">
+  <div class="wrap nav">
+    <a class="logo" href="#inicio" aria-label="IPCS – Instituto de Psicologia e Controle do Stress"><img src="imagens/logo-ipcs-branco.png" alt="IPCS"></a>
+    <ul class="menu">
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#palestrante">Palestras</a></li>
+      <li><a href="#psicoterapia">Psicoterapia</a></li>
+      <li><a href="#empresas">Empresas</a></li>
+      <li><a href="#cases">Resultados</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+    <a class="btn btn-primary" href="https://wa.me/5519999100288" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg><span class="t">Agendar consulta</span></a>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero" id="inicio" style="padding-bottom:0">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="kicker">Psicóloga · Pesquisadora · Palestrante</span>
+      <h1>Dra. Marilda<br><em>Lipp</em></h1>
+      <p class="sub">Referência nacional em psicologia do stress e criadora do Treino de Controle do Stress (TCS). Mais de 40 anos ajudando pessoas e empresas a viverem de forma mais saudável e equilibrada.</p>
+      <div class="ctas">
+        <a class="btn btn-primary" href="https://wa.me/5519999100288" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Agende sua consulta</a>
+        <a class="btn btn-ghost" href="#empresas">Programas para empresas</a>
+      </div>
+    </div>
+    <div class="portrait">
+      <div class="shape"><img src="imagens/marilda-retrato.jpg" alt="Dra. Marilda Novaes Lipp" fetchpriority="high"></div>
+      <div class="badge"><strong>30+</strong><span>livros publicados como autora e coautora</span></div>
+    </div>
+  </div>
+  <div class="stats">
+    <div class="wrap">
+      <div class="stat"><strong>40+</strong><span>anos de experiência</span></div>
+      <div class="stat"><strong>10 mil+</strong><span>horas de atendimento clínico</span></div>
+      <div class="stat"><strong>PhD</strong><span>George Washington University</span></div>
+      <div class="stat"><strong>NIH</strong><span>Pós-doutorado em stress</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- DESTAQUES -->
+<section class="highlights" aria-label="Destaques">
+  <div class="wrap hl-grid">
+    <a class="hl reveal" href="https://www.estresse.com.br/especializacao/" target="_blank" rel="noopener">
+      <span class="arrow"><svg><use href="#i-arrow"/></svg></span>
+      <small>Especialização</small>
+      <h3>Pós-Graduação em TCC</h3>
+      <p>Formação em Terapia Cognitivo-Comportamental com o IPCS.</p>
+    </a>
+    <a class="hl reveal" href="http://nr1.estresse.com.br" target="_blank" rel="noopener">
+      <span class="arrow"><svg><use href="#i-arrow"/></svg></span>
+      <small>Empresas</small>
+      <h3>Saiba mais sobre a NR-1</h3>
+      <p>Riscos psicossociais e saúde mental no ambiente de trabalho.</p>
+    </a>
+    <a class="hl reveal" href="https://stresscongresso.com.br" target="_blank" rel="noopener">
+      <span class="arrow"><svg><use href="#i-arrow"/></svg></span>
+      <small>Evento</small>
+      <h3>Congresso Stress</h3>
+      <p>Conheça a programação e garanta sua participação.</p>
+    </a>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section class="about" id="sobre">
+  <div class="wrap">
+    <div class="about-head reveal">
+      <div>
+        <span class="kicker">Sobre mim</span>
+        <h2>Uma vida dedicada a <em>entender o stress</em></h2>
+      </div>
+      <p>Com mais de 40 anos de experiência como cientista e empresária, não abandonei meu desejo de ser escritora. Hoje, sou autora e coautora de mais de 30 livros, consolidando um sonho que começou na adolescência.</p>
+    </div>
+    <div class="about-img reveal"><img src="imagens/marilda-livros.jpg" alt="Dra. Marilda Lipp com livros de sua autoria" loading="lazy"></div>
+    <div class="cols">
+      <div class="reveal">
+        <span class="n">01 — Origem</span>
+        <h3>Do Rio de Janeiro aos Estados Unidos</h3>
+        <p>Sou carioca e tive o privilégio de estudar no Imperial Colégio Pedro II, onde fui presidente do Grêmio estudantil, editora do jornal e oradora da turma. Embora meu sonho fosse ser escritora, optei por estudar Direito na Faculdade Nacional de Direito, mas a vida me levou aos Estados Unidos, onde descobri a Psicologia.</p>
+      </div>
+      <div class="reveal">
+        <span class="n">02 — Formação</span>
+        <h3>Com grandes nomes da Psicologia</h3>
+        <p>Graduei-me na American University, onde aprendi com grandes nomes como Skinner, Ferster e Sidman. Com o apoio do governo americano, realizei pesquisas sobre comportamento de esquiva e fiz Mestrado e PhD na George Washington University. Depois, um pós-doutorado em stress no National Institute of Health.</p>
+      </div>
+      <div class="reveal">
+        <span class="n">03 — Trajetória</span>
+        <h3>De volta ao Brasil, em Campinas</h3>
+        <p>Voltei ao Brasil para lecionar na PUC Campinas. A vida trouxe desafios, como a perda do meu primeiro marido e do meu filho mais velho, mas segui em frente, casando-me novamente com Darci Sassi, advogado. Meu filho, Louis Mario, é farmacêutico e biomédico, e atua como diretor financeiro do IPCS.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PESQUISADORA -->
+<section class="research" id="pesquisadora">
+  <div class="wrap research-grid">
+    <div class="reveal">
+      <span class="kicker">Psicóloga e pesquisadora</span>
+      <h2>Criadora do <em>Treino de Controle do Stress</em></h2>
+      <p style="margin-top:28px">Minha experiência internacional na área de estresse e qualidade de vida, como diretora fundadora do IPCS e idealizadora do TCS, me permitiu fazer a diferença na vida de muitas pessoas. Minha formação acadêmica robusta e o reconhecimento com prêmios como o Who is Who reforçam meu compromisso com a pesquisa e o entendimento profundo do estresse.</p>
+      <blockquote>Dedico-me a melhorar a qualidade de vida dos meus pacientes, capacitando-os a gerenciar o estresse de maneira saudável.</blockquote>
+    </div>
+    <div class="reveal">
+      <p style="margin-bottom:22px">O TCS oferece estratégias práticas para:</p>
+      <ul class="tcs-list">
+        <li><b>01</b><span>Reestruturar pensamentos negativos</span></li>
+        <li><b>02</b><span>Desenvolver técnicas de relaxamento</span></li>
+        <li><b>03</b><span>Adotar um estilo de vida mais equilibrado</span></li>
+      </ul>
+      <a class="btn btn-primary" style="margin-top:32px" href="https://www.estresse.com.br" target="_blank" rel="noopener">Conheça o IPCS</a>
+    </div>
+  </div>
+</section>
+
+<!-- PALESTRANTE -->
+<section id="palestrante">
+  <div class="wrap speaker-grid">
+    <div class="speaker-img reveal">
+      <div class="ph"><img src="imagens/palestras.jpg" alt="Dra. Marilda Lipp ministrando palestra" loading="lazy"></div>
+      <div class="tag">Palestras · Workshops · Conferências</div>
+    </div>
+    <div class="speaker reveal">
+      <span class="kicker">Palestrante</span>
+      <h2>Conhecimento que <em>transforma</em> pessoas e equipes</h2>
+      <p>Com uma sólida expertise em estresse e qualidade de vida, aliada a uma habilidade excepcional de comunicação, sou uma palestrante requisitada em conferências, workshops e eventos focados no bem-estar mental e emocional. Minhas palestras, baseadas em evidências robustas e na minha experiência clínica, unem autoridade e credibilidade.</p>
+      <p>Minhas apresentações oferecem não apenas insights profundos, mas também estratégias práticas para enfrentar os desafios do mundo moderno. Minha missão é empoderar pessoas com o conhecimento e as ferramentas necessárias para gerenciar o estresse de forma saudável e construtiva.</p>
+      <div class="topics">
+        <span>Stress e qualidade de vida</span><span>Saúde mental no trabalho</span><span>Ansiedade</span><span>Sobrecarga e burnout</span>
+      </div>
+      <a class="btn btn-dark" style="margin-top:36px" href="https://wa.me/5519999100288?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20palestras." target="_blank" rel="noopener">Contrate uma palestra</a>
+    </div>
+  </div>
+</section>
+
+<!-- PSICOTERAPIA -->
+<section class="therapy" id="psicoterapia">
+  <div class="wrap">
+    <div class="therapy-card reveal">
+      <div class="therapy-copy">
+        <span class="kicker">Psicoterapia</span>
+        <h2>Apoio emocional com <em>abordagem direta</em></h2>
+        <p>Tenho mais de 10.000 horas de atendimento clínico. Minha abordagem é rápida, direta e muito participativa. Enfatiza pensamentos, emoções e comportamentos que possam estar sendo um desafio para a pessoa.</p>
+        <div class="modes">
+          <div><strong>On-line</strong><span>Pacientes do mundo todo</span></div>
+          <div><strong>Presencial</strong><span>Campinas – SP, Brasil</span></div>
+        </div>
+        <a class="btn btn-dark" href="https://wa.me/5519999100288?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Marque uma consulta · (19) 99910-0288</a>
+      </div>
+      <div class="therapy-img"><img src="imagens/clinica-ipcs.jpg" alt="Fachada do IPCS em Campinas" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<!-- EMPRESAS -->
+<section id="empresas">
+  <div class="wrap">
+    <div class="biz-head reveal">
+      <div>
+        <span class="kicker">Para empresas</span>
+        <h2>Projetos para os setores <em>público e privado</em></h2>
+      </div>
+      <p>Programas baseados em evidências para reduzir o impacto do stress, promover a saúde mental dos colaboradores e apoiar a adequação às novas exigências da NR-1.</p>
+    </div>
+    <div class="services">
+      <article class="svc reveal">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.35-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.65-9.5 9-9.5 9z"/><path d="M12 10v5M9.5 12.5h5"/></svg></div>
+        <h3>Coaching da saúde</h3>
+        <p>Ajuda os clientes a definirem metas específicas relacionadas à saúde física e mental de seus colaboradores, como reduzir o stress, gerenciar doenças crônicas, melhorar a alimentação, entre outros.</p>
+      </article>
+      <article class="svc featured reveal">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M5 5c0 6 3 8 7 8s7-2 7-8M12 3v18M8.5 21h7"/></svg></div>
+        <h3>Treino do Controle de Stress</h3>
+        <p>Abordagem prática e eficaz para ajudar as pessoas a lidarem de maneira saudável com o stress no dia a dia, com estratégias e técnicas que reduzem seu impacto negativo e promovem o bem-estar mental e emocional.</p>
+      </article>
+      <article class="svc reveal">
+        <div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4M10 8.5v5l4-2.5z"/></svg></div>
+        <h3>Webinários</h3>
+        <ul>
+          <li>Stress, irritabilidade e impaciência</li>
+          <li>A pressão da sobrecarga e o cansaço físico e mental</li>
+          <li>O pensamento como fonte de ansiedade. Aprenda a pensar!</li>
+          <li>Não é apenas tristeza: quando a depressão tira o brilho da vida</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- CASES -->
+<section class="cases" id="cases">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="kicker">Cases de sucesso</span>
+      <h2>Resultados <em>comprovados</em></h2>
+    </div>
+    <div class="case-grid">
+      <article class="case wide reveal">
+        <div>
+          <small>Banco de grande porte</small>
+          <h3>Alcance do Programa Controle do Stress</h3>
+          <p class="who">Programa realizado entre 2017 e 2020.</p>
+          <div class="scroll">
+            <table>
+              <thead><tr><th>Ano de início</th><th>Indicados</th><th>Atendidos</th><th>Aproveitamento</th></tr></thead>
+              <tbody>
+                <tr><td>2020</td><td>572</td><td>367</td><td>64%</td></tr>
+                <tr><td>2019</td><td>750</td><td>750</td><td>100%</td></tr>
+                <tr><td>2018 presencial</td><td>76</td><td>76</td><td>100%</td></tr>
+                <tr><td>2018</td><td>715</td><td>500</td><td>70%</td></tr>
+                <tr><td>2017</td><td>240</td><td>196</td><td>82%</td></tr>
+                <tr class="total"><td>Total</td><td>2.353</td><td>1.889</td><td>80%</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="big-num">
+          <div><strong>2.353</strong><span>colaboradores indicados</span></div>
+          <div><strong>1.889</strong><span>atendidos</span></div>
+          <div><strong>80%</strong><span>de aproveitamento</span></div>
+        </div>
+      </article>
+
+      <article class="case half reveal">
+        <small>Segurança Pública · Mato Grosso</small>
+        <h3>Programa para servidores</h3>
+        <p class="who">Público beneficiado: 2.266 servidores da Segurança Pública do Estado do Mato Grosso.</p>
+        <p style="font-size:14px;font-weight:600;color:var(--ink)">Afastamentos por transtornos mentais (F00–F99) por ano</p>
+        <div class="drop" role="img" aria-label="Afastamentos: 447 em 2009, 345 em 2010 e 193 em 2011">
+          <div><b>447</b><i style="height:100%"></i></div>
+          <div><b>345</b><i style="height:77%"></i></div>
+          <div><b>193</b><i style="height:43%"></i></div>
+        </div>
+        <div class="drop-labels"><span>2009</span><span>2010</span><span>2011</span></div>
+        <div class="callout"><strong>−57%</strong> nos afastamentos entre 2009 e 2011</div>
+      </article>
+
+      <article class="case half reveal">
+        <small>Banco · Nível nacional</small>
+        <h3>Programa para banco</h3>
+        <p class="who">Público beneficiado: 978 colaboradores. Fases do stress antes e após o TCS (%).</p>
+        <div class="chart" role="img" aria-label="Antes e depois do TCS: Sem stress de 14 para 56; Alerta de 4 para 3; Resistência de 48 para 32; Quase exaustão de 22 para 5; Exaustão de 13 para 4">
+          <div class="grp"><div class="bar pre" style="height:23%"><em>14</em></div><div class="bar pos" style="height:93%"><em>56</em></div></div>
+          <div class="grp"><div class="bar pre" style="height:7%"><em>4</em></div><div class="bar pos" style="height:5%"><em>3</em></div></div>
+          <div class="grp"><div class="bar pre" style="height:80%"><em>48</em></div><div class="bar pos" style="height:53%"><em>32</em></div></div>
+          <div class="grp"><div class="bar pre" style="height:37%"><em>22</em></div><div class="bar pos" style="height:8%"><em>5</em></div></div>
+          <div class="grp"><div class="bar pre" style="height:22%"><em>13</em></div><div class="bar pos" style="height:7%"><em>4</em></div></div>
+        </div>
+        <div class="labels"><span>Sem stress</span><span>Alerta</span><span>Resistência</span><span>Quase exaustão</span><span>Exaustão</span></div>
+        <div class="legend"><span><i style="background:#b9cfcf"></i>Antes</span><span><i style="background:var(--teal)"></i>Depois do TCS</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section class="contact" id="contato">
+  <div class="wrap contact-grid">
+    <div class="reveal">
+      <span class="kicker" style="color:var(--aqua)">Contato</span>
+      <h2>Agende seu <em>horário</em></h2>
+      <p class="lead">Atendimento on-line para todo o mundo e presencial em Campinas – SP. Fale diretamente com a equipe do IPCS.</p>
+      <div class="ctas">
+        <a class="btn btn-primary" href="https://wa.me/5519999100288" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Chamar no WhatsApp</a>
+        <a class="btn btn-ghost" href="tel:+551932340288">Ligar (19) 3234-0288</a>
+      </div>
+    </div>
+    <div class="clist reveal">
+      <a href="https://wa.me/5519999100288" target="_blank" rel="noopener"><span class="ci"><svg class="fill"><use href="#i-wa"/></svg></span><div><small>WhatsApp</small><span>(19) 99910-0288</span></div></a>
+      <a href="tel:+551932340288"><span class="ci"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></span><div><small>Telefone</small><span>(19) 3234-0288</span></div></a>
+      <a href="mailto:mlipp@estresse.com.br"><span class="ci"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span><div><small>E-mail</small><span>mlipp@estresse.com.br</span></div></a>
+      <a href="https://www.estresse.com.br" target="_blank" rel="noopener"><span class="ci"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></span><div><small>Site do IPCS</small><span>www.estresse.com.br</span></div></a>
+      <a href="https://www.marildalipp.com.br" target="_blank" rel="noopener"><span class="ci"><svg viewBox="0 0 24 24"><path d="M6 7h12l-1 13H7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg></span><div><small>Loja virtual</small><span>www.marildalipp.com.br</span></div></a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <img src="imagens/logo-ipcs-branco.png" alt="IPCS">
+    <span>© <span id="ano">2026</span> IPCS – Instituto de Psicologia e Controle do Stress · Dra. Marilda Novaes Lipp · Campinas – SP</span>
+  </div>
+</footer>
+
+<a class="float-wa" href="https://wa.me/5519999100288" target="_blank" rel="noopener" aria-label="Falar no WhatsApp"><svg><use href="#i-wa"/></svg></a>
+
+<script>
+  document.getElementById('ano').textContent = new Date().getFullYear();
+  var hdr = document.getElementById('top');
+  function onScroll(){ hdr.classList.toggle('solid', window.scrollY > 40); }
+  window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } }); }, {threshold:.12});
+    document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+  } else { document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('in'); }); }
+</script>
+</body>
+</html>
